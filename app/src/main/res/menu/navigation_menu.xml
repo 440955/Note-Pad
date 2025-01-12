@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        >
+
+        <item android:id="@+id/navi_home"
+            android:title="Home"
+            android:icon="@drawable/home"
+            />
+
+        <item android:id="@+id/navi_writeNote"
+            android:title="Write Note"
+            android:icon="@drawable/writing_icon"
+            />
+        <item android:id="@+id/nevi_about"
+            android:title="About Developer"
+            android:icon="@drawable/about"
+            />
+        <item
+            android:id="@+id/nevi_policy"
+            android:title="Privacy Policy"
+            android:icon="@drawable/policy"
+            />
+        <item
+            android:id="@+id/shareApp"
+            android:title="Share App"
+            android:icon="@drawable/share"
+            />
+        <item
+            android:id="@+id/rateUs"
+            android:title="Rate Us"
+            android:icon="@drawable/rating"
+            />
+    </group>
+
+</menu>

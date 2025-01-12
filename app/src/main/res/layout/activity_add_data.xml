@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddData">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/statusbar"
+        android:elevation="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <ImageView
+            android:id="@+id/img_tikMark"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:src="@drawable/tikmark" />
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/delete"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/image_share"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/share_1"
+            android:visibility="visible" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/_3sdp"
+        android:textSize="@dimen/_8ssp"
+        android:textColor="@color/black"
+        android:text="Date"
+        android:layout_below="@+id/toolBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_marginRight="@dimen/_2ssp"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/_3sdp"
+        android:textSize="@dimen/_8ssp"
+        android:textColor="@color/black"
+        android:text="Time"
+        android:layout_below="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_noteType"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:inputType="text"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/statusbar"
+        android:text="Note Type:"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/toolBar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"/>
+
+    <EditText
+        android:id="@+id/ed_noteType"
+        android:padding="@dimen/_10sdp"
+        android:inputType="text"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/black"
+        android:hint="..........."
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColorHint="@color/statusbar"
+        android:backgroundTint="@color/statusbar"
+        android:layout_below="@id/toolBar"
+        android:layout_toRightOf="@+id/tv_noteType"
+        android:ems="5"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"/>
+
+    <TextView
+        android:id="@+id/note_title"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="Note Title:"
+        android:layout_below="@+id/ed_noteType"
+        android:textColor="@color/statusbar"
+        android:textSize="@dimen/_16ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"/>
+    <EditText
+        android:id="@+id/ed_title"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColorHint="@color/statusbar"
+        android:hint="..........."
+        android:backgroundTint="@color/statusbar"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        android:padding="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/note_title"
+        android:inputType="text"
+        android:layout_below="@id/tv_noteType"
+        android:ems="10"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"/>
+
+
+    <EditText
+        android:id="@+id/ed_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ed_title"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:backgroundTint="@color/white"
+        android:gravity="start"
+        android:hint="Details......."
+        android:inputType="textMultiLine"
+        android:padding="@dimen/_7sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/statusbar"
+        android:textSize="@dimen/_16ssp" />
+
+</RelativeLayout>
